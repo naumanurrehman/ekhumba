@@ -19,5 +19,5 @@ def twostring(string=""):
         check=-1
     return output
 
-out=twostring("4\nHello\nWorld\nbe\ncool\nYES\nNO\nGO TO some place\nok i will go")
+out=twostring("3\nHello\nWorld\nbe\ncool\nYES\nNO")
 print(out)

@@ -1,4 +1,4 @@
-def power(n,d):
+def powerfun(n,d):
     p=0
     temp=pow(d,p)
     while(temp<=n):
@@ -8,4 +8,17 @@ def power(n,d):
         temp=pow(d,p)
     return 0
 
-print(power(64,8))
+tests = [
+    (64, 8, 1),
+    (8, 2, 1),
+    (16, 4, 1),
+    (124, 8, 0),
+
+]
+
+for test in tests:
+    if powerfun(test[0],test[1])!=test[2]:
+        print("Failed on value: "+str(test[0])+' '+str(test[1]))
+        exit(1)
+
+

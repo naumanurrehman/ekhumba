@@ -1,15 +1,24 @@
-n = 2**int(input())
+def digits(n):
+    n=2**n
+    count = 0
+    temp = 10
+    x=True
+    while x:
+        count = count+1
+        if n<temp:
+            x = False
+        temp = temp * 10
+    return count
 
-count = 0
-temp = 10
 
+tests = [
+    (2, 1),
+    (4, 2),
+    (7, 3),
+    (10, 4),
+]
 
-x = 1
-while x:
-    count = count+1
-    if n<temp:
-        x = 0
-    temp = temp * 10
-
-print('The number of digits are: ', count)
-
+for test in tests:
+    if digits(test[0])!=test[1]:
+        print("Failed on value: "+str(test[0]))
+        exit(1)
