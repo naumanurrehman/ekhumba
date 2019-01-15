@@ -20,6 +20,6 @@ for i in range(n):
 for i in range(n):
     if ar[i] >= 38:
         if ar[i] % 5 >= 3:
-            ar[i] = m.ceil(ar[i]/5)*5
+            ar[i] = int(ar[i]/5)*5+5
 
 print(ar)
