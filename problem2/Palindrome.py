@@ -1,4 +1,4 @@
-q = int(input("Enter number of queries: "))
+#q = int(input("Enter number of queries: "))
 s = input("Enter a string: ")
 
 if s == s[::-1]:

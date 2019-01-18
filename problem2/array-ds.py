@@ -3,7 +3,6 @@ import array as arr
 n = int(input("Enter the number of elements of the array: "))
 
 ar = arr.array('i', [])
-ar_rev = arr.array('i', [])
 
 print("Enter elements: ")
 
@@ -16,7 +15,7 @@ for i in range(int(n/2)):
     ar[i] = ar[n-1-i]
     ar[n-i-1] = a
 
-
-#ar_rev = ar[::-1]
-
-print(ar)
+s = ""
+for i in ar:
+    s = s + str(i) + " "
+print(s)
