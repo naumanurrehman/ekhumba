@@ -14,12 +14,6 @@ def gradingStudents(grades):
                 output.append(x)
     return output
 
-
-
-
-
-
-
 n = int(input())
 
 grades = []

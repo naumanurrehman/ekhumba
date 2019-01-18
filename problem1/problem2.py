@@ -1,18 +1,17 @@
 def powerfun(num):
     from math import sqrt
-    if num==1:
+    if num == 1:
         return True
-    for x in range(2,int(sqrt(num))+1):
-
-
-        y=1
-        p=1
-        while (p <= num):
-            p=pow(x,y)
-            y=y+1
-            if (p == num):
+    for x in range(2, int(sqrt(num))+1):
+        y = 1
+        p = 1
+        while p <= num:
+            p = pow(x,y)
+            y = y+1
+            if p == num:
                 return True
     return False
+
 
 tests = [
     (2, 0),
@@ -25,9 +24,7 @@ tests = [
 ]
 
 for test in tests:
-    if powerfun(test[0])!=test[1]:
+    if powerfun(test[0]) != test[1]:
         print("Failed on value: "+str(test[0]))
         exit(1)
-
-
-
+print("All tests passed")
